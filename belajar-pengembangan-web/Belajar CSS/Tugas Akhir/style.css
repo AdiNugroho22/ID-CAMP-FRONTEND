@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  color: #279EFF;
+}
+ 
+body {
+  font-family: 'Sarala', sans-serif;;
+  margin: 0;
+  padding: 0;
+}
+ 
+header {
+  display: inline;
+}
+ 
+nav ul {
+  padding-inline: 4rem;
+ 
+  display: flex;
+  gap: 2rem;
+}
+ 
+nav li {
+  list-style-type: none;
+}
+ 
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+}
+ 
+nav a:hover {
+  font-weight: bold;
+  font-size: 17px;
+}
+ 
+main {
+  padding: 20px;
+ 
+  display: flex;
+  gap: 1.5rem;
+}
+
+ 
+#content {
+  flex: 5;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+ 
+aside {
+  flex: 1;
+  text-align: center;
+}
+ 
+h2 {
+  color: #17594A;
+}
+ 
+h3 {
+  color: #17594A;
+}
+ 
+footer {
+  padding: 20px;
+  color: #fff;
+  background-color: #B0D9B1;
+  text-align: center;
+}
+ 
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: #B0D9B1;
+  text-align: center;
+  color: white;
+}
+ 
+.profile header {
+  text-align: center;
+}
+ 
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+ 
+  object-fit: cover;
+  object-position: center;
+}
+ 
+.card {
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+  /* Add additional styles for dark mode here */  
+}
+
+button {
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+
+section {
+  text-align: center;
+}
+ 
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+ 
+  main aside {
+    align-self: center;
+  }
+}
+ 
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+ 
+  main aside {
+    align-self: stretch;
+  }
+}
